@@ -8,3 +8,4 @@ var student = {
 }
 //console.log(document.write(student.name));
 console.log(student.sum(10,20));
+
