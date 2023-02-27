@@ -33,3 +33,4 @@ rwx r-x r-x
 ### 문자열의 개별 문자가 'l'이면
 for (var i = 0; i < string.length; i++) { 
    <br> if (string[i] !== search) continue; count++; }
+
