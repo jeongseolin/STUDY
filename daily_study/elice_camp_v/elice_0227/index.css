@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    } 
+    .container {
+    width: 960px;
+    }
+    
+    ol, ul {
+    list-style: none; /* 각 리스트 앞에 표기를 삭제하겠다. */
+    }
+    a {
+    text-decoration: none; /* 언더바를 없애겠다. */
+    color: #000;
+    }
+    
+    #intro {
+    width: 100%; /* 부모 960 안에서의 100%를 의미 */
+    height: 80px;
+    }
+    
+    #intro h1 { /* 로고 영역 */
+    float: left;
+    width: 50%;
+    height: 80px;
+    background-color: #fbfbfb;
+    }
+    #intro h1 a { 
+    display: block;
+    padding: 22px 0 0 30px; /* top right bottom left */
+    font-size: 30px;
+    }
+    
+    #intro nav {
+    float: right;
+    width: 50%;
+    height: 80px;
+    background-color: pink;
+    }
+    #intro nav ul li {
+    width: 33.33333%;
+    height: 80px;
+    float: left; /* y축 정렬을 왼쪽에서 부터 정렬로 변경 */
+    text-align: center;
+    line-height: 80px; /* 글자간 위아래 영역 */
+    }
+    
+    #intro nav ul li.one {
+    background-color: #efeff6;
+    }
+    #intro nav ul li.two {
+    background-color: #dcdcec;
+    }
+    #intro nav ul li.three {
+    background-color: #cbcae3;
+    }
+    
+    #intro nav ul li a {
+    font-size: 20px;
+    font-weight: bold;
+    }

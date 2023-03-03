@@ -1,0 +1,13 @@
+#main article.one {
+    transition: backgroun-color 1s;
+}
+#main article.one:hover {
+    background-color: #8683bd;
+}
+
+#main article img {
+    transition: all 1s; /* img 모든 것에 영향을 주겠다. (width, height, backgorund-color... 등 */
+}
+#main article img:hover {
+    transform: scale(1.1);
+}

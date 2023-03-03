@@ -1,0 +1,6 @@
+#intro nav ul li a {
+    transition: color 1s;
+}
+#intro nav ul li a:hover {
+    color: #917f7f;
+}
