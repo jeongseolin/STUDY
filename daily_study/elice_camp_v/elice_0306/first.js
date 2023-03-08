@@ -92,6 +92,20 @@ function getDigits (inputA) {
       answer.unshift(parseInt(n[i]))
   }
   return answer;
+  // for (i = 0; i <= n.length-1; i++) {
+  //  answer.push(parseInt(n[i]))
+  //}
+  // return answer;
+}
+
+// 위에꺼 다른 방법
+function getDigits (inputA) {
+  n = inputA.toString()
+  var answer = [];
+  for (i = 0; i <= n.length-1; i++) {
+      answer.push(parseInt(n[i]))
+  }
+  return answer;
 }
 
 // 성인만 골라내는 함수 만들기

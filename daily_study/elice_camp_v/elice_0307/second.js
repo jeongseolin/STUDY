@@ -15,4 +15,8 @@ function isRightTriangle (a, b, c) {
   else return false;
 }
 
-// 
+// 자릿수 배열을 숫자로 되돌리는 함수 만들기
+function makeNumberFromDigits(inputA) {
+  let answer = Number(inputA.join('')) // join() : 배열의 모든 요소를 연결해 하나의 문자열로 만듭니다.
+  return answer;
+}
