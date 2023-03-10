@@ -1,0 +1,67 @@
+/* 지시사항에 맞춰 Header 스타일을 작성해주세요. */
+.header {
+  box-sizing: border-box;
+
+  border-bottom: 1px solid #dbdbdb;
+}
+.header__container {
+  width: 975px;
+  height: 60px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  display: flex;
+  flex-basis: 333px;
+}
+.header__logo > img:nth-child(2) {
+  padding: 8px 4px;
+
+  cursor: pointer;
+}
+.header__search {
+  width: 268px;
+
+  position: relative;
+}
+.header__search > img {
+  position: absolute;
+  top: 50%;
+  left: 22px;
+  transform: translate(-50%, -50%);
+}
+.header__search > input {
+  width: 268px;
+  height: 36px;
+  padding-left: 40px;
+  box-sizing: border-box;
+  
+  background-color: #efefef;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+.header__buttons {
+  display: flex;
+  flex-basis: 333px;
+  justify-content: flex-end;
+}
+.header__buttons > img {
+  margin: 0 9px;
+  
+  cursor: pointer;
+}
+.header__buttons > .header__avata {
+  margin: 0 8px;
+
+  cursor: pointer;
+
+}
+.header__buttons > .header__avata > img {
+  border-radius: 100px;
+}
