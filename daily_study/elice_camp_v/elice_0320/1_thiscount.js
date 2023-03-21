@@ -13,7 +13,7 @@ const Counter = {
 // 1) 현재 시간 구하기
         const currentTime = Date.now(); 
 // 2) while문을 활용해서 date.now()의 초 증가하기
-        while (true) {
+        while (true) { 
             const now = Date.now(); // Date.now()를 계속 구해라.
             if (now - currentTime > 3000) break; // 3초가 넘었으면 while문 벗어나기
         }
