@@ -32,3 +32,30 @@
   - npm remove : 패키지 삭제(node_modules 파일도 같이 삭제)
 
 ### 3) NPX
+- NPX 란?<br>
+  . npm 패키지를 설치하지 않고 사용할 수 있게 해주는 도구<br>
+  . Node.js의 특정 버전을 사용하여 js파일을 실행할 수 있음.<br>
+  . github gist 코드 실행 가능<br>
+
+### 4) Node.js의 모듈
+- 모듈이란?<br>
+  . 기능에 맞게 코드를 분리하는 방법<br>
+  . 패키지는 모듈의 모음<br>
+- 기본 제공 모듈<br>
+  a) <b>console</b> : 로그 레벨, 로그 시간 추적가능<br>
+  b) <b>process</b> : 실행 환경 및 변수 값, 프로세스 동작 관련 함수 제공<br>
+  c) <b>fs</b> : 파일 입출력, 동기동작, 변경 감지<br>
+  d) <b>http</b> : 서버생성, http 요청생성<br>
+  e) <b>url</b> : url 파싱<br>
+  f) <b>os</b> : 운영체제 정보<br>
+  g) <b>path</b> : 디렉토리 string 관련 작업<br>
+  h) <b>crypto</b> : 암호화, hash 관련 함수 제공<br>
+
+### 5) 모듈의 작성과 사용
+- `module.exports`를 사용하여 모듈을 작성할 수 있음
+- `require`를 사용하여 의존성 패키지, 모듈, json파일을 사용할 수 있음
+- 모듈은 첫 require 시에만 실행되므로 여러 번 실행할 모듈은 `함수형`으로 작성해야 함<br>
+
+### 6) ES Module과 commonjs
+- ES Module은 `export`와 `import`로 모듈을 만들고 사용
+- commonjs는 `module.exports`와 `require`로 모듈을 만들고 사용
