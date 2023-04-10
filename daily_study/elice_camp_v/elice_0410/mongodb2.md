@@ -15,3 +15,15 @@
 - $lt(미만), $lte(이하), $gt(초과), $gte(이상) : range query
 - $in : 다중 값, 배열에 주어진 값 중 최소 한 개의 일치하는 값을 가진 document를 검색한다.
 - $or : 다중 조건
+
+## 5) Mongoose ODM 커넥션 이벤트
+- connected : 연결 완료
+- disconnected : 연결 끊김
+- reconnected : 재연결 완료
+- reconnectFailed : 재연결 시도 횟수 초과
+  
+## 6) Sequelize ORM
+- Object-Relational Mapping
+- RDBMS를 이용하는 간단한 방법, 테이블 관게와 쿼리 등의 기능을 더욱 단순화하는 용도로 주로 사용
+- <b>`sequelize`</b> + define : Schema 생성
+- <b>`sequelize`</b> + sync : define된 Model 데이터를 바탕으로 DDL을 자동으로 실행, 직접 데이터베이스에 접속하여 테이블 생성 및 관리를 할 필요가 없음
