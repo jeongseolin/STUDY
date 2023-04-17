@@ -18,5 +18,43 @@ router.get("/:show_id", async (req, res) => {
   res.json(content);
 });
 
+// 작품을 추가하는 API를 구현하세요.
+router.post("/", async (req, res) => {
+  const { show_id, title, type, director } = req.body;
+
+  const content = await Content.create({
+    show_id,
+    type,
+    title,
+    director,
+  });
+  res.json(content);
+});
+
+// 작품을 수정하는 API를 구현하세요.
+router.put("/:show_id", async (req, res) => {
+  const { show_id } = req.params;
+  const { title, type, director } = req.body;
+
+  const content = await Content.updateOne(
+    { show_id },
+    {
+      type,
+      title,
+      director,
+    }
+  );
+  res.json(content);
+});
+
+// 작품을 삭제하는 API를 구현하세요.
+router.delete("/:show_id", async (req, res) => {
+  const { show_id } = req.params;
+
+  const content = await Content.deleteOne({ show_id });
+  res.send(content);
+});
+
+
 // 작성한 라우터를 exports하세요.
 module.exports = router;
