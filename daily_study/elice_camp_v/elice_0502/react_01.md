@@ -20,7 +20,7 @@
 - State : State가 변경될 때마다 컴포넌트가 다시 렌더링
 
 ### 4) Create React App (CRA)
-- <script crossorigin src=""></script>
+- script crossorigin src=""
 - React 프로젝트를 손쉽게 생성할 수 있도록 도와주는 '보일러플레이트(Boilerplate)'
 - transcompile : Babel, 코드 번들링, Webpack
 
