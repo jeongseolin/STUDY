@@ -16,5 +16,3 @@
 - State 값을 직접 변경하지 마세요. -> <b>`setState()`</b> 함수 사용하기
   - import React, { useState } from 'react';
 - Object를 갖는 State -> <b>`newUser = {...current}`</b> 새로운 객체로 만들어서 사용하기
-
-### 3) 
