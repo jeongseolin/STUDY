@@ -63,5 +63,3 @@
 - flex: 1; = 1 1 auto;
 - flex: 0 0 120px;
   - flex-grow flex-shrink flex-basis
-
-### 5) 
