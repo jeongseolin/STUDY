@@ -1,0 +1,43 @@
+/* container 클래스를 Flexobx로 만들고, 안에 있는 아이템을 일정한 간격으로 띄우세요. */
+.container {
+  border: solid 2px black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+
+  /* 미디어쿼리를 이용해 768px 이하일 때 Flexbox를 다시 배치하세요. */
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  #box1 {
+    align-self: flex-start;
+    order: 1;
+  }
+
+  #box2 {
+    align-self: center;
+    order: 2;
+  }
+
+  #box3 {
+    align-self: flex-end;
+    order: 3;
+  }
+
+  /* container의 아이템 요소 */
+  .container>div {
+    background-color: yellow;
+    width: fit-content;
+    margin: 4px 8px;
+    padding: 4px 8px;
+    border: solid 2px black;
+    text-align: center;
+  }
+}
